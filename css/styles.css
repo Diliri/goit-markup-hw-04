@@ -260,8 +260,14 @@ h1 {
 .list-social-media {
   display: flex;
   gap: 24px;
-    flex-shrink: 0;
+  flex-shrink: 0;
   align-self: flex-end;
+  margin-top: 8px;
+}
+
+list-social-media:hover,
+list-social-media:focus {
+  color: #404bbf;
 }
 
 .list-social-media .link {
@@ -330,19 +336,6 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-}
-
-.list-social-media {
-  display: block;
-  padding: 24px 0;
-  font-weight: 500;
-  color: #2e2f42;
-  text-decoration: none;
-}
-
-list-social-media:hover,
-list-social-media:focus {
-  color: #404bbf;
 }
 
 .footer-icon {
