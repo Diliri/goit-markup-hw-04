@@ -1,3 +1,3 @@
-goit-markup-hw-02
+goit-markup-hw-04
 
-This is my first project with CSS
+Add background images, vector images, pseudo-elements, positioning and css-conversion / transformation
