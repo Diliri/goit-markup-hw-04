@@ -1,0 +1,303 @@
+/* font-family Roboto, Raleway*/
+
+/* Використовуючи універсальний селектор * (вибирає всі елементи), значення border-box встановлюється для всіх елементів і псевдоелементів ::before та ::after документа (про них дізнаємося пізніше). */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+/* HEADER */
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+}
+
+.logo-header-part {
+  color: #2e2f42;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  color: #2e2f42;
+  text-decoration: none;
+  letter-spacing: 0.02em
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-nav {
+  display: inline-block;
+  color: #434455;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.address-nav:hover,
+.address-nav:focus {
+  color: #404bbf;
+}
+
+/* HERO */
+
+.main-hero {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
+
+.main-hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  max-width: 496px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  background-color: #4d5ae5;
+  color: #fff;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #404bbf;
+}
+
+/* FEATURES */
+
+.features {
+  padding: 120px 0;
+}
+
+.features .container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* TEAM */
+
+.team {
+  background-color:  #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-title {
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-part {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-part img {
+  width: 264px;
+  height: 260px;
+}
+
+.border-team {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-part {
+  width: 360px;
+}
+
+.portfolio-part img {
+  width: 360px;
+}
+
+.border-portfolio {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  width: 264px;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+}
+
+.footer-logo-part-two {
+  color: #f4f4fd;
+}
