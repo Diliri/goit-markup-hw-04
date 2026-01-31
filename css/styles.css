@@ -257,13 +257,25 @@ h1 {
   text-align: center;
 }
 
-.item-social-media {
-  display: block;
+.list-social-media {
+  display: flex;
+  gap: 24px;
+    flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.list-social-media .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
   border-radius: 50%;
-  gap: 24px;
+  background-color:  #4d5ae5;
+}
+
+.team-icon {
+  fill: #fff;
 }
 
 /* PORTFOLIO */
@@ -331,4 +343,8 @@ h1 {
 list-social-media:hover,
 list-social-media:focus {
   color: #404bbf;
+}
+
+.footer-icon {
+  fill: #fff;
 }
